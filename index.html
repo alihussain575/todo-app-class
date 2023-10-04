@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class='w-3/6 mx-auto border mt-10' >
+      <form class="p-3" id="todo-form" >
+        <div class='flex flex-col' >
+          <label>Title</label>
+          <input type="text" id="title" class="border rounded" />
+        </div>
+        <div class="flex flex-col" >
+          <label>description</label>
+          <input id="description" class="border rounded" />
+        </div>
+        <button
+          class="bg-blue-800 hover:bg-blue-300 text-white rounded p-1 mt-5"
+          type="submit"
+          id="submit"
+        >
+          Submit
+        </button>
+      </form>
+      <form class="p-3 hidden" id="update-form" >
+        <div class='flex flex-col' >
+          <label>Title</label>
+          <input type="text" id="update-title" class="border rounded" />
+        </div>
+        <div class="flex flex-col" >
+          <label>description</label>
+          <input id="update-description" class="border rounded" />
+        </div>
+        <button
+          class="bg-blue-800 hover:bg-blue-300 text-white rounded p-1 mt-5"
+          id="update"
+          id="submit"
+        >
+          Update
+        </button>
+      </form>
+    </section>
+    <button id="test" >click to alert</button>
+    <section id="todo-list" class="mt-10 flex flex-col gap-5 w-3/6 mx-auto" ></section>
+
+    <input id="demo" type="text" placeholder="test" >
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="p01"></p>
+
+  </body>
+  <!-- <script src="./app.js" type="module" ></script> -->
+  <script src="./app2.js" type="module"></script>
+  <!-- <script type="module">
+    import {name} from './app2'
+
+    console.log(name)
+  </script> -->
+</html>
